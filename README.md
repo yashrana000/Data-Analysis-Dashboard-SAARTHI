@@ -4,7 +4,6 @@
 
 A dashboard I built during my internship at the Business Development Group (BDG) of CSIR-National Physical Laboratory, New Delhi. It takes the group's project and technology transfer records, which are kept in Excel workbooks, and turns them into KPIs, charts and a searchable view of every record.
 
-![Dashboard home](images/04-dashboard-home.png)
 
 ## A note on the data and code
 This was done as part of a government internship, so the source workbooks and the application code are not published here. The repository only contains screenshots of the dashboard. Any figures or IDs visible in them come from the internal records and are shown only to illustrate how the tool works.
@@ -17,13 +16,6 @@ This was done as part of a government internship, so the source workbooks and th
 5. **Lets you search the records.** A single search box takes conditions such as `date = 22-12-2021`, `st = delhi` or `cost > 500000`. Conditions can be combined, listed or chained (see below).
 6. **Exports to Excel.** The records that match a search can be exported as a formatted .xlsx file, with the conditions used written at the top and the columns chosen by the user.
 
-## Screenshots
-
-| Upload | Sheet selection |
-|---|---|
-| ![Upload screen](images/01-upload-screen.png) | ![Sheet selection](images/02-sheet-selection.png) |
-
-![Data validation](images/03-data-validation.png)
 
 ### Search
 The search box understands short column names and a few operators.
@@ -35,12 +27,7 @@ The search box understands short column names and a few operators.
 | `;` | AND, e.g. `state = delhi ; cost > 500000` |
 | `.` | narrow the previous result, e.g. `state = delhi ; cost > 500000 . pi = sharma` |
 
-![Search](images/05-lookup.png)
 
-### Excel export
-![Excel export](images/06-excel-export.png)
-
-The full set of screenshots is also available as a PDF in [`docs/`](docs/Dashboard-Screenshots.pdf).
 
 ## Tools
 - Python (pandas, openpyxl, Plotly, Dash)
